@@ -15,7 +15,7 @@ while getopts 'lha:' OPTION; do
 			echo "the value provided is $OPTARG"
 			;;
 		?)
-			echo "script usage: $(basename \$0) [-l] [-h] [-a somevalue]" >&2
+			echo "script usage: $(basename "$0") [-l] [-h] [-a somevalue]" >&2
 			exit 1
 			;;
 	esac
